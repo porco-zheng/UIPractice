@@ -20,5 +20,12 @@
       android:text="@string/module1"
       />
 
+  <Button
+      android:id="@+id/module2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/module2"
+      />
+
 
 </LinearLayout>

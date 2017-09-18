@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
   @BindView(R.id.module1) Button module1;
   @BindView(R.id.activity_main) LinearLayout activityMain;
+  @BindView(R.id.module2) Button module2;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -22,13 +23,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private void initView() {
-      module1.setOnClickListener(this);
+    module1.setOnClickListener(this);
+    module2.setOnClickListener(this);
   }
 
   @Override public void onClick(View v) {
     switch (v.getId()) {
       case R.id.module1:
         startActivity(new Intent(MainActivity.this, Practice1Activity.class));
+        break;
+      case R.id.module2:
+        startActivity(new Intent(MainActivity.this, Practice2Activity.class));
         break;
     }
   }

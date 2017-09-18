@@ -1,1 +1,1 @@
-include ':app', ':uipractice1', ':baselib'
+include ':app', ':uipractice1', ':baselib', ':uipractice2'
